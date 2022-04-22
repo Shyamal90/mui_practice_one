@@ -3,7 +3,13 @@ import React from 'react'
 
 function Rightbar() {
   return (
-    <Box sx={{backgroundColor:"red", flex : "2"}}>
+    <Box sx={
+      {
+        backgroundColor:"red",
+        flex : "2",
+        display: {xs:"none",sm:"block"}
+      }
+    }>
       <h1>This Right Bar</h1>
     </Box>
   )

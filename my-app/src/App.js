@@ -8,7 +8,9 @@ import { Stack } from '@mui/material';
 
 function App() {
   return (
-    <Box className="App">
+    <Box className="App" sx={{
+      minWidth:"380px"
+    }}>
       <Navbar/>
       <Stack direction="row" spacing={4} justifyContent="space-between">
         <Sidebar/>
