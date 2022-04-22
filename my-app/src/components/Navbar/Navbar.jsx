@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { AppBar, Avatar, Badge, Box, IconButton, InputBase, Toolbar, Typography } from '@mui/material'
+import { AppBar, Badge, Box, IconButton, InputBase, Toolbar, Typography } from '@mui/material'
 import AppleIcon from '@mui/icons-material/Apple';
 import SearchIcon from '@mui/icons-material/Search';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import Profile from '../Profile/Profile'
 
 
 
@@ -31,7 +32,7 @@ function Navbar() {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    gap: "20px",
+    gap: "6px",
     // border:"1px solid white"
   }))
 
@@ -91,13 +92,7 @@ function Navbar() {
             </Badge>
           </IconButton>
 
-          <Avatar sx={
-            {
-              height: "30px",
-              width: "30px",
-              // margin:"0 0.3em"
-            }
-          } alt="Shyamal Sardar" src={`https://avatars.githubusercontent.com/u/88072892?v=4`} />
+          <Profile/>
         </Icons>
 
         <UserBox sx={{
@@ -106,15 +101,11 @@ function Navbar() {
             sm:"none"
           }
         }}>
-          <Avatar sx={
-            {
-              height: "30px",
-              width: "30px",
-              // margin:"0 0.3em"
-            }
-          } alt="Shyamal Sardar" src={`https://avatars.githubusercontent.com/u/88072892?v=4`} />
+          <Profile/>
           <Typography varient="h1">Shyam</Typography>
         </UserBox>
+
+        
 
       </StyleToolBar>
     </AppBar>

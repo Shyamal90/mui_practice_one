@@ -10,7 +10,11 @@ function Rightbar() {
         display: {xs:"none",sm:"block"}
       }
     }>
-      <h1>This Right Bar</h1>
+      <Box sx={{
+        position:"fixed"
+      }}>
+        <h1>This Right Bar</h1>
+      </Box>
     </Box>
   )
 }
