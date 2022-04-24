@@ -4,7 +4,7 @@ import { AddBusiness, DarkMode, Group, Home, MenuBook, PermContactCalendar, Pers
 import ListItems from '../ListItems/ListItems';
 import { Box, Switch } from '@mui/material';
 
-function Sidebar() {
+function Sidebar({setMode,mode}) {
   return (
     <Box sx={
       {
@@ -23,7 +23,7 @@ function Sidebar() {
         <ListItems listName={"Friends"} listIcon={<PersonAdd />} />
         <ListItems listName={"Settings"} listIcon={<Settings />} />
         <ListItems listName={"Profile"} listIcon={<PermContactCalendar />} />
-        <ListItems listName={<Switch />} listIcon={<DarkMode />} />
+        <ListItems listName={<Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>} listIcon={<DarkMode />} />
       </Box>
     </Box>
   )
